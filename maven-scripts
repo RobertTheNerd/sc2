@@ -1,0 +1,1 @@
+mvn exec:java -Dconfig="file:/pathtoconfigfile" -Dexec.args="fullupdate"
