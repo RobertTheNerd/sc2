@@ -1,1 +1,1 @@
-mvn exec:java -Dconfig="file:/pathtoconfigfile" -Dexec.args="fullupdate"
+mvn exec:java -Dconfig="file:/pathtoconfigfile" -Dexec.args="fullupdate"  -Dlog4j.configuration="/Users/robert/data/SolrUpdater/log4j.properties"
