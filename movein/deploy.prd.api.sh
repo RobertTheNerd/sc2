@@ -16,6 +16,6 @@ pushd $SCRIPT_PATH
 
 #update_artifact $artifact_dir $warFile
 
-deploy_api $artifact_dir/$warFile /srv/sites/sc2geeks/api.v2 localhost:7112 $env
+deploy_api $artifact_dir/$warFile /srv/sites/sc2geeks/api.v2 localhost:7106 $env
 
 popd

@@ -7,8 +7,8 @@ source ${SCRIPT_PATH}/deploy.common.sh
 artifact_dir=$SCRIPT_PATH/artifacts
 
 # prd settings
-warFile=www.website.prd.war
-env=$SCRIPT_PATH/env/prd/website
+warFile=www.website-0.9.war
+env=$SCRIPT_PATH/env/prd/www
 # prd settings 
 
 # setting up artifacts folder
@@ -16,8 +16,7 @@ pushd $SCRIPT_PATH
 
 update_artifact $artifact_dir $warFile
 
-deploy_web $artifact_dir/$warFile /srv/sites/sc2geeks/www/port.8868 localhost:8868 $env
-deploy_web $artifact_dir/$warFile /srv/sites/sc2geeks/www/port.8869 localhost:8869 $env
+deploy_web $artifact_dir/$warFile /srv/sites/sc2geeks/www localhost:7121 $env
 
 popd
 

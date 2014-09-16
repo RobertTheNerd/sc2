@@ -16,7 +16,7 @@ function deploy_web {
 	then
 	    mkdir $siteRoot
 	else
-    	mv $siteRoot/$sitemap $siteRoot/../
+    	    mv $siteRoot/$sitemap $siteRoot/../
 	    rm $siteRoot/* -rf
 	    mv $siteRoot/../$sitemap $siteRoot/
 	fi
@@ -31,8 +31,8 @@ function deploy_web {
 	#  warm up website
 	echo Warming up for site ${site} ...
 	sleep 5
-	wget -O /dev/null http://${site}/replay/index.html
-	wget -O /dev/null  http://${site}/replay/replay/EGIdrA-27574.html
+	#wget -O /dev/null http://${site}/replay/index.html
+	#wget -O /dev/null  http://${site}/replay/replay/EGIdrA-27574.html
 	echo done for site ${site}!
 }
 function deploy_api {
