@@ -4,4 +4,4 @@
 mvn exec:java -Dconfig="file:/pathtoconfigfile" -Dexec.args="fullupdate"  -Dlog4j.configuration="/Users/robert/data/SolrUpdater/log4j.properties"
 
 
-mvn exec:java -Dconfig="file:/srv/sc2geeks/app/solrUpdater/config/config.xml" -Dexec.args="fullupdate"  -Dlog4j.configuration="file:/srv/sc2geeks/app/solrUpdater/log4j.properties"
+mvn exec:java -Dconfig="file:/srv/sc2geeks/app/solrUpdater/config/config.xml" -Dexec.args="fullupdate"  -Dlog4j.configuration="file:/srv/sc2geeks/app/solrUpdater/config/log4j.properties"
