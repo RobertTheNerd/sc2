@@ -10,11 +10,13 @@ function update_source {
 	if [ ! -d $source_dir ]
 	then
 		mkdir -p $source_dir
-        svn co https://subversion.assembla.com/svn/hostbuy/sc2geeks/java/v2/trunk $source_dir
+		git clone https://github.com/RobertTheNerd/sc2-java.git $source_dir
 	else
 		if [ "$#" -eq 1 ] 
 		then
-			svn update $source_dir
+			pushd $source_dir
+			git fetch --all
+			popd	
 		fi
 	fi
 }
