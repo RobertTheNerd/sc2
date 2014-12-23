@@ -16,6 +16,7 @@ function update_source {
 		then
 			pushd $source_dir
 			git fetch --all
+			git reset --hard origin/master
 			popd	
 		fi
 	fi
