@@ -26,7 +26,7 @@ function deploy_web {
 	jar xvf $war
 	echo Deployed: $NOW >> sentry.txt
 	cp -rf $env/* .
-	$tomcatFolder/bin/startup.sh
+	$tomcatFolder/start.sh
 
 	#  warm up website
 	echo Warming up for site ${site} ...
@@ -60,7 +60,7 @@ function deploy_api {
 	jar xvf $warFile
 	echo Deployed: $NOW >> sentry.txt
 	cp -rf $env/* .
-	$tomcatFolder/bin/startup.sh
+	$tomcatFolder/start.sh
 
 	#  warm up website
 	#echo Warming up for site ${site} ...

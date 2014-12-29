@@ -16,7 +16,7 @@ pushd $SCRIPT_PATH
 
 update_artifact $artifact_dir $warFile
 
-deploy_web $artifact_dir/$warFile /srv/sites/sc2geeks/www localhost:7121 $env
+deploy_web $artifact_dir/$warFile /srv/sites/sc2geeks/www localhost:7122 $env
 
 popd
 
