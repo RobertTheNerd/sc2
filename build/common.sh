@@ -1,23 +1,24 @@
 #!/bin/bash
 function init_variables {
 	base_dir=$1
-	source_dir=$base_dir/source
+	source_root=$base_dir/source
+	source_dir=$source_root/web-api
 	artifact_dir=$base_dir/artifacts
 	export source_dir artifact_dir
 }
 function update_source {
 	local source_dir=$1
-	if [ ! -d $source_dir ]
+	if [ ! -d $source_root ]
 	then
-		mkdir -p $source_dir
-		git clone https://github.com/RobertTheNerd/sc2-java.git $source_dir
+		mkdir -p $source_root
+		git clone https://github.com/RobertTheNerd/sc2geeks.git $source_root
 	else
 		if [ "$#" -eq 1 ] 
 		then
-			pushd $source_dir
+			pushd $source_root
 			git fetch --all
 			git reset --hard origin/master
-			popd	
+			popd
 		fi
 	fi
 }
