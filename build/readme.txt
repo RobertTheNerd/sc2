@@ -3,7 +3,7 @@ port assignments
 		shutdown	http	ajp
 solr		6805		6806	6807
 api		7101		7102	7103
-api.v2		7106	7107	7108
+api.v2		7106		7107	7108
 www.old		7111		7112	7113
 www		7121		7122	712371
 
