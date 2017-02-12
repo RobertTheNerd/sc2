@@ -1,4 +1,4 @@
 sc2
 ===
 
-SC2 Related scripts &amp; functions
+SC2 devops scripts.
